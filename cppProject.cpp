@@ -205,13 +205,48 @@ int main()
         getline(readFile, t);
         s[i].add(name, roll_no, t);
     }
+    int option;
+    while(1)
+    {
+        cout<<"Please Enter your option to proceed:";
+        cout<<"1.Modify a student record "<<endl;
+        cout<<"2.Delete a student record"<<endl;
+        cout<<"3.Display a particular student record"<<endl;
+        cout<<"4.Display all student records\n";
+        cout<<"5.Display all 3 toppers";
+        cin>>option;
+        switch(option)
+        {
+            case 1:{
+                modify();
+                break;
+            }
+            case 2:{
+                del_st();
+                break;
+            }
+            case 3:{
+                display_particular();
+                break;
+            }
+            case 4:{
+                display();
+                break;
+            }
+            case 5:{
+                cout<<"tooper: "<<endl;
+                topper();
+                break;
+            } 
+        }
+    }
 
     // modify();
     // del_st();
     // display();
     // display_particular();
-    cout<<"tooper: "<<endl;
-    topper();
+//     cout<<"tooper: "<<endl;
+   // topper();
 
     return 0;
 }
