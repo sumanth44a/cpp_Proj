@@ -206,7 +206,7 @@ int main()
         s[i].add(name, roll_no, t);
     }
 
-    // modify();
+    modify();
     // del_st();
     // display();
     // display_particular();
